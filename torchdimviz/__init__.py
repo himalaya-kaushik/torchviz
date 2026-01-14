@@ -3,15 +3,14 @@ from torch.utils._python_dispatch import TorchDispatchMode
 from tabulate import tabulate
 import functools
 
-# --- CONFIGURATION ---
 
 FRIENDLY_NAMES = {
     't': 'transpose',
     'mm': 'matmul',
-    'addmm': 'linear_proj',         # What nn.Linear uses
+    'addmm': 'linear_proj',         
     'bmm': 'batch_matmul',
-    'select': 'slice_index',        # x[:, -1]
-    'unsafe_split': 'split',        # LSTM internal
+    'select': 'slice_index',        
+    'unsafe_split': 'split',        
     'unsafe_view': 'view',
     'unbind': 'unstack',
     'cat': 'concat',
@@ -23,7 +22,6 @@ FRIENDLY_NAMES = {
     'tanh': 'tanh',
 }
 
-# 2. Noise Gate - Internal ops to ignore (Memory/Size checks)
 IGNORED_OPS = {
     'aten::size', 'aten::stride', 'aten::storage_offset', 'aten::is_floating_point',
     'aten::is_complex', 'aten::is_conj', 'aten::numel', 'aten::dim',
@@ -41,7 +39,6 @@ class DimVizTracker(TorchDispatchMode):
         if isinstance(obj, torch.Tensor):
             return str(tuple(obj.shape))
         if isinstance(obj, (list, tuple)):
-            # Recursively format lists of tensors
             shapes = [self._format_shape(x) for x in obj if isinstance(x, (torch.Tensor, list, tuple))]
             if shapes:
                 return " | ".join(shapes)
@@ -52,11 +49,9 @@ class DimVizTracker(TorchDispatchMode):
         
         op_name = func._schema.name
         
-        # Run execution first (Let PyTorch do the math)
         output = func(*args, **kwargs)
 
         if op_name not in IGNORED_OPS:
-            # 1. Clean the name (remove 'aten::')
             raw_name = op_name.replace("aten::", "")
             # 2. Translate (Get friendly name if exists, else use raw)
             # Remove trailing underscore for in-place ops (add_ -> add) for lookup
