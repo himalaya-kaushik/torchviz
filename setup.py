@@ -50,8 +50,8 @@ setup(
     },
     keywords="pytorch tensor shape debugging visualization deep-learning",
     project_urls={
-        "Bug Reports": "https://github.com/yourusername/dimviz/issues",
-        "Source": "https://github.com/yourusername/dimviz",
-        "Documentation": "https://github.com/yourusername/dimviz#readme",
+        "Bug Reports": "https://github.com/himalaya-kaushik/dimviz/issues",
+        "Source": "https://github.com/himalaya-kaushik/dimviz",
+        "Documentation": "https://github.com/himalaya-kaushik/dimviz#readme",
     },
 )

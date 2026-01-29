@@ -344,7 +344,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-- GitHub: [@himalaya-kaushik](https://github.com/yourusername)
+- GitHub: [@himalaya-kaushik](https://github.com/himalaya-kaushik)
 - Email: himalaya341@gmail.com
 
 ---

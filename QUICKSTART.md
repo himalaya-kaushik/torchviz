@@ -9,6 +9,7 @@ pip install dimviz
 ```
 
 For colored output (recommended):
+
 ```bash
 pip install dimviz[rich]
 ```
@@ -36,6 +37,7 @@ with DimViz():
 ```
 
 **Output:**
+
 ```
 ╭──────┬───────────┬─────────────┬──────────────╮
 │ Step │ Operation │ Input Shape │ Output Shape │
@@ -125,35 +127,45 @@ with DimViz(track_memory=True, filter_ops=['conv2d', 'linear']):
 ## Tips & Tricks
 
 ### Tip 1: Reduce Noise
+
 Use `verbose=False` to only see shape transformations:
+
 ```python
 with DimViz(verbose=False):
     output = model(x)
 ```
 
 ### Tip 2: Focus on Important Ops
+
 Filter to only track operations you care about:
+
 ```python
 with DimViz(filter_ops=['matmul', 'conv2d', 'linear']):
     output = model(x)
 ```
 
 ### Tip 3: Limit Output
+
 Limit the number of logged operations:
+
 ```python
 with DimViz(max_entries=20):
     output = model(x)
 ```
 
 ### Tip 4: Hide Summary
+
 Turn off the summary if you just want the table:
+
 ```python
 with DimViz(show_summary=False):
     output = model(x)
 ```
 
 ### Tip 5: Compare Models
+
 Compare shape flows between model versions:
+
 ```python
 from dimviz.exporter import compare_logs
 
@@ -180,7 +192,7 @@ class SimpleCNN(nn.Module):
         self.pool = nn.MaxPool2d(2)
         self.conv2 = nn.Conv2d(32, 64, 3, padding=1)
         self.fc = nn.Linear(64 * 8 * 8, 10)
-    
+
     def forward(self, x):
         x = self.pool(torch.relu(self.conv1(x)))
         x = self.pool(torch.relu(self.conv2(x)))
@@ -195,6 +207,7 @@ with DimViz(verbose=False):  # Only shape changes
 ```
 
 **Output:**
+
 ```
 ╭──────┬────────────┬───────────────┬──────────────╮
 │ Step │ Operation  │ Input Shape   │ Output Shape │
@@ -215,12 +228,12 @@ Perfect! You can now see exactly how the spatial dimensions reduce through pooli
 - Check out the [full documentation](README.md)
 - See more [examples](examples/)
 - Read about [contributing](CONTRIBUTING.md)
-- Report [issues](https://github.com/yourusername/dimviz/issues)
+- Report [issues](https://github.com/himalaya-kaushik/dimviz/issues)
 
 ## Need Help?
 
 - 📖 Read the [README](README.md)
-- 🐛 Found a bug? [Open an issue](https://github.com/yourusername/dimviz/issues)
-- 💡 Have a feature idea? [Start a discussion](https://github.com/yourusername/dimviz/discussions)
+- 🐛 Found a bug? [Open an issue](https://github.com/himalaya-kaushik/dimviz/issues)
+- 💡 Have a feature idea? [Start a discussion](https://github.com/himalaya-kaushik/dimviz/discussions)
 
 Happy debugging! 🔍✨

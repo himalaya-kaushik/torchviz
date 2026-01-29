@@ -42,6 +42,7 @@ dimviz-package/
 ## ✨ What Makes This Production-Ready
 
 ### ✅ Complete Implementation
+
 - Multi-input tensor tracking (fixed your original issue!)
 - Memory profiling per operation
 - Multiple export formats (JSON, CSV, TXT)
@@ -51,6 +52,7 @@ dimviz-package/
 - Rich terminal output with fallback
 
 ### ✅ Professional Quality
+
 - **40+ test cases** covering all features
 - Comprehensive error handling
 - Type hints throughout
@@ -59,6 +61,7 @@ dimviz-package/
 - Performance benchmarks included
 
 ### ✅ Excellent Documentation
+
 - **2,000+ lines** of documentation
 - Quick start guide
 - 9 complete examples
@@ -71,17 +74,18 @@ dimviz-package/
 ### Step 1: Update Your Information
 
 Edit these files with your details:
+
 ```bash
 # setup.py - Lines 12-15
-author="Your Name"
-author_email="your.email@example.com"
-url="https://github.com/yourusername/dimviz"
+author="Himalaya"
+author_email="himalaya341@gmail.com"
+url="https://github.com/himalaya-kaushik/dimviz"
 
 # pyproject.toml - Lines 9-10
 authors = [{name = "Your Name", email = "your.email@example.com"}]
 
 # README.md
-Replace all "yourusername" with your actual GitHub username
+Replace all "himalaya-kaushik" with your actual GitHub username
 ```
 
 ### Step 2: Create GitHub Repository
@@ -92,7 +96,7 @@ git init
 git add .
 git commit -m "Initial commit: DimViz v0.1.0"
 git branch -M main
-git remote add origin https://github.com/yourusername/dimviz.git
+git remote add origin https://github.com/himalaya-kaushik/dimviz.git
 git push -u origin main
 ```
 
@@ -147,16 +151,16 @@ pip install dimviz
 
 ## 🎯 Key Improvements Over Original
 
-| Original Issue | Fixed ✅ |
-|----------------|---------|
+| Original Issue              | Fixed ✅                              |
+| --------------------------- | ------------------------------------- |
 | Only tracked first argument | Now tracks ALL inputs (args + kwargs) |
-| No export functionality | JSON, CSV, TXT exports |
-| No memory tracking | Full memory profiling |
-| No filtering | Operation filtering + verbosity modes |
-| No tests | 40+ comprehensive tests |
-| Basic display | Rich terminal tables + summary stats |
-| No comparison tools | Compare logs between runs |
-| No documentation | 2,000+ lines of docs |
+| No export functionality     | JSON, CSV, TXT exports                |
+| No memory tracking          | Full memory profiling                 |
+| No filtering                | Operation filtering + verbosity modes |
+| No tests                    | 40+ comprehensive tests               |
+| Basic display               | Rich terminal tables + summary stats  |
+| No comparison tools         | Compare logs between runs             |
+| No documentation            | 2,000+ lines of docs                  |
 
 ## 💡 Quick Usage
 
@@ -181,6 +185,7 @@ with DimViz():
 ## 📊 Performance
 
 Benchmarked overhead:
+
 - **Verbose mode**: 5-15% (development)
 - **Non-verbose**: 2-8% (production)
 - **Filtered**: 1-5% (minimal)
@@ -188,6 +193,7 @@ Benchmarked overhead:
 ## 🧪 Tests
 
 Run the test suite:
+
 ```bash
 pytest tests/ -v --cov=dimviz --cov-report=html
 ```
@@ -197,6 +203,7 @@ All 40+ tests should pass!
 ## 📚 Examples
 
 Try the included examples:
+
 ```bash
 # See all features in action
 python examples/basic_usage.py
@@ -208,18 +215,21 @@ python examples/benchmark.py
 ## 🤔 Why This Package is Valuable
 
 ### For Individual Developers:
+
 - **Debug shape mismatches** faster
 - **Understand complex models** better
 - **Optimize memory usage** easily
 - **Document architectures** automatically
 
 ### For Teams:
+
 - **Standardize debugging** workflows
 - **Compare model versions** objectively
 - **Export logs** for analysis
 - **Track performance** over time
 
 ### For the PyTorch Community:
+
 - **Lightweight** alternative to heavy profilers
 - **Simple API** that just works
 - **Zero code changes** required
@@ -247,6 +257,7 @@ python examples/benchmark.py
 ## 📈 Marketing Suggestions
 
 ### Launch Announcement:
+
 - Reddit: r/MachineLearning, r/pytorch
 - Hacker News
 - Twitter/X with #PyTorch #MachineLearning
@@ -254,6 +265,7 @@ python examples/benchmark.py
 - PyTorch Forums
 
 ### Blog Post Ideas:
+
 - "Debugging PyTorch Shape Mismatches"
 - "5 Minutes to Better Model Understanding"
 - "Lightweight Tensor Profiling"
@@ -263,6 +275,7 @@ python examples/benchmark.py
 This package is **production-ready** and can be published to PyPI today!
 
 ### What You Have:
+
 ✅ Complete implementation with all features  
 ✅ 40+ comprehensive tests  
 ✅ 2,000+ lines of documentation  
@@ -270,9 +283,10 @@ This package is **production-ready** and can be published to PyPI today!
 ✅ Performance benchmarks  
 ✅ Multiple examples  
 ✅ Contributing guidelines  
-✅ Publishing guide  
+✅ Publishing guide
 
 ### What You Need to Do:
+
 1. Update author information (3 files)
 2. Create GitHub repository
 3. Test everything works
@@ -282,6 +296,7 @@ This package is **production-ready** and can be published to PyPI today!
 ## 📞 Questions?
 
 Everything you need is documented:
+
 - **General Info**: README.md
 - **Quick Start**: QUICKSTART.md
 - **Publishing**: PYPI_PUBLISHING.md
@@ -292,4 +307,4 @@ Everything you need is documented:
 
 **Good luck with your PyPI release! This is a solid package that will help many PyTorch developers.** 🎊
 
-*Built with ❤️ for the PyTorch community*
+_Built with ❤️ for the PyTorch community_

@@ -47,10 +47,10 @@ rich = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/dimviz"
-Documentation = "https://github.com/yourusername/dimviz#readme"
-Repository = "https://github.com/yourusername/dimviz"
-"Bug Tracker" = "https://github.com/yourusername/dimviz/issues"
+Homepage = "https://github.com/himalaya-kaushik/dimviz"
+Documentation = "https://github.com/himalaya-kaushik/dimviz#readme"
+Repository = "https://github.com/himalaya-kaushik/dimviz"
+"Bug Tracker" = "https://github.com/himalaya-kaushik/dimviz/issues"
 
 [tool.black]
 line-length = 100
