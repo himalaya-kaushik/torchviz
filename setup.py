@@ -15,7 +15,7 @@ setup(
     description="A lightweight debugging tool for tracking tensor shape transformations in PyTorch",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/dimviz",
+    url="https://github.com/himalaya-kaushik/dimviz",
     packages=find_packages(exclude=["tests", "tests.*", "examples"]),
     classifiers=[
         "Development Status :: 4 - Beta",

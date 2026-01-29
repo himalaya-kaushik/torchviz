@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2024-01-29
 
 ### Added
+
 - Initial release of DimViz
 - Core tracking functionality with `DimViz` context manager
 - `@visualize` decorator for easy function wrapping
@@ -33,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Complex model architectures (CNNs, Transformers, etc.)
 
 ### Features
+
 - Zero-code-change tracking via context manager
 - Automatic shape detection for all tensor inputs/outputs
 - Smart filtering of metadata operations
@@ -41,11 +43,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Compare shape flows between model versions
 
 ### Documentation
+
 - Comprehensive README with examples
 - API documentation in docstrings
 - Contributing guidelines
 - Example scripts for common use cases
 - Test coverage
 
-[Unreleased]: https://github.com/yourusername/dimviz/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/yourusername/dimviz/releases/tag/v0.1.0
+[Unreleased]: https://github.com/himalaya-kaushik/dimviz/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/himalaya-kaushik/dimviz/releases/tag/v0.1.0

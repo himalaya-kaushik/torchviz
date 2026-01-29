@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [
-    {name = "Your Name", email = "your.email@example.com"}
+    {name = "Himalaya", email = "himalaya341@gmai.com"}
 ]
 keywords = ["pytorch", "tensor", "shape", "debugging", "visualization", "deep-learning"]
 classifiers = [
@@ -30,6 +30,7 @@ classifiers = [
 dependencies = [
     "torch>=1.9.0",
     "tabulate>=0.8.9",
+    "numpy"
 ]
 
 [project.optional-dependencies]

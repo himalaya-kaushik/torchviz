@@ -7,7 +7,7 @@ Thank you for your interest in contributing to DimViz! This document provides gu
 1. **Fork the repository** on GitHub
 2. **Clone your fork** locally:
    ```bash
-   git clone https://github.com/yourusername/dimviz.git
+   git clone https://github.com/himalaya-kaushik/dimviz.git
    cd dimviz
    ```
 3. **Install in development mode**:
@@ -31,6 +31,7 @@ pip install -e ".[dev,rich]"
 ### Making Changes
 
 1. **Create a new branch**:
+
    ```bash
    git checkout -b feature/your-feature-name
    ```
@@ -38,11 +39,13 @@ pip install -e ".[dev,rich]"
 2. **Make your changes** and ensure they follow our coding standards
 
 3. **Run tests**:
+
    ```bash
    pytest tests/ -v
    ```
 
 4. **Run code formatters**:
+
    ```bash
    black dimviz tests examples
    isort dimviz tests examples
@@ -78,19 +81,21 @@ pytest tests/test_dimviz.py -v
 - Include docstrings explaining what you're testing
 
 Example:
+
 ```python
 def test_basic_tracking():
     """Test that basic operation tracking works correctly."""
     with DimViz(show_summary=False) as viz:
         x = torch.randn(2, 10)
         y = x + 1
-    
+
     assert len(viz.get_log()) > 0
 ```
 
 ### Code Style
 
 We follow PEP 8 with some modifications:
+
 - Line length: 100 characters
 - Use Black for formatting
 - Use isort for import sorting
@@ -98,12 +103,14 @@ We follow PEP 8 with some modifications:
 ### Commit Messages
 
 Write clear, descriptive commit messages:
+
 - Use present tense ("Add feature" not "Added feature")
 - Start with a verb ("Fix", "Add", "Update", "Remove")
 - Keep first line under 50 characters
 - Add detailed explanation in the body if needed
 
 Good examples:
+
 ```
 Add memory tracking feature
 
@@ -127,21 +134,27 @@ Now they display as "scalar" for clarity.
 5. **Submit the PR** with a clear description
 
 PR Description Template:
+
 ```markdown
 ## Description
+
 Brief description of what this PR does
 
 ## Motivation
+
 Why is this change needed?
 
 ## Changes
+
 - List of changes made
 - Another change
 
 ## Testing
+
 How have you tested these changes?
 
 ## Checklist
+
 - [ ] Tests pass
 - [ ] Code formatted with Black
 - [ ] Documentation updated
@@ -153,6 +166,7 @@ How have you tested these changes?
 ### Bug Reports
 
 Submit bug reports through GitHub Issues:
+
 - Use a clear, descriptive title
 - Describe the expected behavior
 - Describe the actual behavior
@@ -162,6 +176,7 @@ Submit bug reports through GitHub Issues:
 ### Feature Requests
 
 We welcome feature requests! Please:
+
 - Use a clear, descriptive title
 - Explain the feature and its benefits
 - Provide examples of how it would be used
@@ -170,6 +185,7 @@ We welcome feature requests! Please:
 ### Code Contributions
 
 Areas where contributions are especially welcome:
+
 - Additional export formats
 - Performance optimizations
 - Better error messages
