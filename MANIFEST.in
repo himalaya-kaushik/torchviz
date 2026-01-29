@@ -1,0 +1,11 @@
+include README.md
+include LICENSE
+include pyproject.toml
+include setup.py
+recursive-include dimviz *.py
+recursive-include tests *.py
+recursive-include examples *.py *.ipynb
+prune tests/__pycache__
+prune dimviz/__pycache__
+global-exclude *.pyc
+global-exclude __pycache__
